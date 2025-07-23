@@ -1,19 +1,18 @@
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full bg-black/80 z-20 flex items-center h-16 px-4 font-['Pixelify_Sans'] text-lg">
-      <a href="#home">
+      <Link to="/">
         <img src="/photos/nav-picture.png" alt="Logo" className="h-12 mr-4" />
-      </a>
-      <ul className="hidden sm:flex ml-auto space-x-6">
+      </Link>
+      <ul className="hidden sm:flex ml-auto space-x-6 text-white">
         <li>
-          <a href="#home" className="hover:bg-white hover:text-black px-4 py-2 transition text-4xl">
-            Home
-          </a>
+            <Link className='hover:bg-white hover:text-black px-4 py-2 transition text-4xl' to="/">Home</Link>
         </li>
         <li>
-          <a href="#projects" className="hover:bg-white hover:text-black px-4 py-2 transition text-4xl">
-            Projects
-          </a>
+            <Link className='hover:bg-white hover:text-black px-4 py-2 transition text-4xl' to="/Projects">
+            Projects</Link>
         </li>
       </ul>
       <div className="sm:hidden ml-auto">

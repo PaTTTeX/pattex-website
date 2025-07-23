@@ -19,3 +19,7 @@
   src: url('/fonts/Poppins.ttf') format("truetype");
 }
 
+:root {
+  overflow-y: scroll;
+  background-color: black;
+}
