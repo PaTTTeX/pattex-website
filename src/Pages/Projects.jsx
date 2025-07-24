@@ -3,6 +3,7 @@ import { IoIosArrowDropdown } from "react-icons/io";
 import { FaSass, FaHtml5, FaJs, FaReact } from "react-icons/fa6";
 import { SiTypescript } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import { ImNewTab } from "react-icons/im";
 
 export default function Projects() {
     const [openCard, setOpenCard] = useState(null);
@@ -27,7 +28,7 @@ export default function Projects() {
 
 
                     {/* Card 1 */}
-                    <div className="flex flex-col border-5 border-[#4C5844] bg-[#4c584462] rounded-2xl shadow-inner text-center text-3xl w-full min-h-[700px]">
+                    <div className="flex flex-col border-5 border-[#4C5844] bg-[#4c584462] rounded-2xl shadow-inner text-center text-3xl w-full min-h-[750px]">
                         <h2 className="font-bold p-4 text-3xl bg-[#4C5844]">Guitar with Marion<br />2025</h2>
 
                         <img
@@ -49,10 +50,10 @@ export default function Projects() {
                         </button>
 
                         <div
-                        className={`transition-all duration-300 overflow-hidden mx-auto rounded-b-lg bg-[#0000002e] ${openCard === 3 ? "max-h-[300px] p-4" : "max-h-0 p-0"}`}
+                            className={`transition-all duration-300 overflow-hidden mx-auto rounded-b-lg bg-[#0000002e] ${openCard === 3 ? "max-h-[300px] p-4" : "max-h-0 p-0"}`}
                         >
                             <p className="text-white text-xl">
-                                A responsive website for a local guitar teacher in Galway. I handled the full development process—from layout to deployment—focusing on clean UI, accessibility, and informative content to attract new students.
+                                A responsive website for a local guitar teacher in Galway. I handled the full development process from layout to deployment-focusing on clean UI, accessibility, and informative content to attract new students.
                             </p>
                         </div>
 
@@ -84,10 +85,18 @@ export default function Projects() {
                                 <p className="text-xs font-bold font-sans">JavaScript</p>
                             </div>
                         </div>
+
+                        <div className="relative mt-auto w-full h-10">
+                            <a target="_blank" href="https://marionguitar.com">
+                                <ImNewTab className="absolute bottom-2 right-2 size-8 text-white hover:text-[#56a848] transition" />
+                            </a>
+                        </div>
+
+
                     </div>
 
                     {/* Card 2 */}
-                    <div className="flex flex-col border-5 border-[#4C5844] bg-[#4c584462] rounded-2xl shadow-inner text-center text-1xl w-full min-h-[700px]">
+                    <div className="flex flex-col border-5 border-[#4C5844] bg-[#4c584462] rounded-2xl shadow-inner text-center text-1xl w-full min-h-[750px]">
                         <h2 className="font-bold p-4 text-3xl bg-[#4C5844]">Enigma Vault<br />2025</h2>
 
                         <img
@@ -136,11 +145,18 @@ export default function Projects() {
                                 <p className="text-xs font-bold font-sans">Sass</p>
                             </div>
                         </div>
+
+                        <div className="relative mt-auto w-full h-10">
+                            <a target="_blank" href="https://enigmavault.org">
+                                <ImNewTab className="absolute bottom-2 right-2 size-8 text-white hover:text-[#56a848] transition" />
+                            </a>
+                        </div>
+
                     </div>
 
 
                 </div>
-            </main>
-        </div>
+            </main >
+        </div >
     );
 }
