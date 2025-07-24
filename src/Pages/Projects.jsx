@@ -49,7 +49,7 @@ export default function Projects() {
                         </button>
 
                         <div
-                            className={`transition-all duration-300 overflow-hidden mx-auto rounded-b-lg bg-[#0000002e] ${openCard === 3 ? "max-h-[300px] p-4" : "max-h-0 p-0"}`}
+                        className={`transition-all duration-300 overflow-hidden mx-auto rounded-b-lg bg-[#0000002e] ${openCard === 3 ? "max-h-[300px] p-4" : "max-h-0 p-0"}`}
                         >
                             <p className="text-white text-xl">
                                 A responsive website for a local guitar teacher in Galway. I handled the full development process—from layout to deployment—focusing on clean UI, accessibility, and informative content to attract new students.
