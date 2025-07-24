@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer className="flex justify-center items-center gap-3 py-5 bg-black">
+        <footer className="flex justify-center items-center gap-3 py-5">
             {[
                 {
                     href: 'https://www.linkedin.com/in/tomas-necesany/',
@@ -16,7 +16,7 @@ function Footer() {
                 },
             ].map(({ href, icon }) => (
                 <a key={href} href={href} target="_blank" rel="noopener noreferrer">
-                    <img src={`/photos/icons/${icon}`} alt={icon} className="w-15 rounded-full hover:bg-white transition" />
+                    <img src={`/photos/icons/${icon}`} alt={icon} className="w-15 rounded-full hover:bg-white/90 transition" />
                 </a>
             ))}
         </footer>

@@ -22,4 +22,10 @@
 :root {
   overflow-y: scroll;
   background-color: black;
+  background-image: url('/photos/bg.png');
+}
+
+body {
+  background-color: black;
+  background-image: url('/photos/bg.png');
 }
