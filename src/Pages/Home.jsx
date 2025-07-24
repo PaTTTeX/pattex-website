@@ -1,4 +1,4 @@
-import Slideshow from "./../components/Slideshow.jsx";
+import Slideshow from "./../Components/Slideshow.jsx";
 
 function Home() {
   const scrollToSection = (id) => {
