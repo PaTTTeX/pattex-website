@@ -31,7 +31,7 @@ function Home() {
 
           <button
             onClick={() => scrollToSection('#main-body')}
-            className="mt-6 px-6 py-3 border border-white rounded hover:bg-white hover:text-black font-['Pixelify_Sans'] text-xl transition"
+            className="mt-6 px-6 py-3 border border-white rounded hover:bg-white hover:text-black font-['Pixelify_Sans'] text-xl transition cursor-pointer"
           >
             SEE MORE
           </button>
@@ -48,7 +48,7 @@ function Home() {
       </header>
 
 
-      <main id="main-body" className="relative z-10 shadow-[0_-20px_20px_rgba(0,0,0,1)] sm:px-[5%] 2xl:x-100 " style={{ backgroundImage: "url('/photos/main-content.png')" }}>
+      <main id="main-body" className="relative z-10 shadow-[0_-20px_20px_rgba(0,0,0,1)] sm:px-[1%] md:px-[20%] 2xl:x-100" style={{ backgroundImage: "url('/photos/main-content.png')" }}>
         <h1 className="text-6xl mb-10 font-bold font-pixel text-center">My Expertise</h1>
         <div className="flex flex-col md:flex-row justify-center gap-6 items-stretch">
 
