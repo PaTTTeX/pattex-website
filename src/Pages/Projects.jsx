@@ -4,9 +4,9 @@ import FullscreenImage from '../Components/FullscreenImage';
 
 // Importing icons
 import { IoIosArrowDropdown } from "react-icons/io";
-import { FaSass, FaHtml5, FaJs, FaReact } from "react-icons/fa6";
-import { FaNodeJs, FaBootstrap, FaGithub } from "react-icons/fa";
-import { SiTypescript, SiMongodb, SiExpress } from "react-icons/si";
+import { FaSass, FaHtml5, FaJs, FaReact, FaPhp, FaCss3 } from "react-icons/fa6";
+import { FaNodeJs, FaBootstrap, FaGithub, FaCss3Alt } from "react-icons/fa";
+import { SiTypescript, SiMongodb, SiExpress, SiTailwindcss, SiApache, SiMysql } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { BsDatabaseFillGear } from "react-icons/bs";
 import { ImNewTab } from "react-icons/im";
@@ -26,6 +26,7 @@ const techStackMarion = [
   { Icon: SiTypescript, label: "Typescript" },
   { Icon: FaHtml5, label: "HTML5" },
   { Icon: FaJs, label: "JavaScript" },
+  { Icon: SiTailwindcss, label: "Tailwind" },
 ];
 
 const techStackEnigma = [
@@ -43,6 +44,20 @@ const techStackAnimalList = [
   { Icon: FaBootstrap, label: "Bootstrap" },
 ];
 
+const techStackRescueRanch = [
+  { Icon: SiApache, label: "Apache" },
+  { Icon: FaPhp, label: "PHP" },
+  { Icon: SiMysql, label: "MySQL" },
+  { Icon: FaHtml5, label: "HTML5" },
+  { Icon: FaJs, label: "Javascript" },
+  { Icon: FaCss3Alt, label: "CSS" },
+];
+
+const techStackShellDefender = [
+  { Icon: FaHtml5, label: "HTML5" },
+  { Icon: FaJs, label: "Javascript" },
+  { Icon: FaCss3Alt, label: "CSS" },
+];
 export default function Projects() {
   const [openCards, setOpenCards] = useState({});
 
@@ -81,18 +96,16 @@ export default function Projects() {
             >
               Guitar Lesson Website
               <span
-                className={`transition-transform duration-300 ${
-                  openCards["marion"] ? "rotate-180" : ""
-                }`}
+                className={`transition-transform duration-300 ${openCards["marion"] ? "rotate-180" : ""
+                  }`}
               >
                 <IoIosArrowDropdown />
               </span>
             </button>
 
             <div
-              className={`transition-all duration-300 overflow-hidden mx-auto rounded-b-lg bg-[#0000002e] ${
-                openCards["marion"] ? "max-h-[300px] p-4" : "max-h-0 p-0"
-              }`}
+              className={`transition-all duration-300 overflow-hidden mx-auto rounded-b-lg bg-[#0000002e] ${openCards["marion"] ? "max-h-[300px] p-4" : "max-h-0 p-0"
+                }`}
             >
               <p className="text-white text-xl">
                 A responsive website for a local guitar teacher in Galway. I
@@ -103,7 +116,7 @@ export default function Projects() {
             </div>
 
             <div className="w-full h-[2px] bg-[#ffffff] opacity-50"></div>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap justify-center">
               {techStackMarion.map((tech) => (
                 <SkillBadge key={tech.label} {...tech} />
               ))}
@@ -136,18 +149,16 @@ export default function Projects() {
             >
               Game Website
               <span
-                className={`transition-transform duration-300 ${
-                  openCards["enigma"] ? "rotate-180" : ""
-                }`}
+                className={`transition-transform duration-300 ${openCards["enigma"] ? "rotate-180" : ""
+                  }`}
               >
                 <IoIosArrowDropdown />
               </span>
             </button>
 
             <div
-              className={`transition-all duration-300 overflow-hidden mx-auto rounded-b-lg bg-[#0000002e] ${
-                openCards["enigma"] ? "max-h-[300px] p-4" : "max-h-0 p-0"
-              }`}
+              className={`transition-all duration-300 overflow-hidden mx-auto rounded-b-lg bg-[#0000002e] ${openCards["enigma"] ? "max-h-[300px] p-4" : "max-h-0 p-0"
+                }`}
             >
               <p className="text-white text-xl">
                 Enigma Vault was my final group project, where I was responsible
@@ -157,7 +168,7 @@ export default function Projects() {
             </div>
 
             <div className="w-full h-[2px] bg-[#ffffff] opacity-50"></div>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap justify-center">
               {techStackEnigma.map((tech) => (
                 <SkillBadge key={tech.label} {...tech} />
               ))}
@@ -186,18 +197,16 @@ export default function Projects() {
             >
               Animal Management (Full-Stack MERN)
               <span
-                className={`transition-transform duration-300 ${
-                  openCards["animal"] ? "rotate-180" : ""
-                }`}
+                className={`transition-transform duration-300 ${openCards["animal"] ? "rotate-180" : ""
+                  }`}
               >
                 <IoIosArrowDropdown />
               </span>
             </button>
 
             <div
-              className={`transition-all duration-300 overflow-hidden mx-auto rounded-b-lg bg-[#0000002e] ${
-                openCards["animal"] ? "max-h-[300px] p-4" : "max-h-0 p-0"
-              }`}
+              className={`transition-all duration-300 overflow-hidden mx-auto rounded-b-lg bg-[#0000002e] ${openCards["animal"] ? "max-h-[300px] p-4" : "max-h-0 p-0"
+                }`}
             >
               <p className="text-white text-xl">
                 A full-stack animal management app using Express, MongoDB,
@@ -207,7 +216,7 @@ export default function Projects() {
             </div>
 
             <div className="w-full h-[2px] bg-[#ffffff] opacity-50"></div>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap justify-center">
               {techStackAnimalList.map((tech) => (
                 <SkillBadge key={tech.label} {...tech} />
               ))}
@@ -222,6 +231,111 @@ export default function Projects() {
               </a>
             </div>
           </div>
+
+
+          {/* Card 4 - Foxford Rescue Ranch */}
+          <div className="flex flex-col border-5 border-[#4C5844] bg-[#4c584462] rounded-2xl shadow-inner text-center text-1xl w-full min-h-[750px]">
+            <h2 className="font-bold p-4 text-3xl bg-[#4C5844]">
+              Foxford Rescue Ranch<br />2024
+            </h2>
+
+            <FullscreenImage
+              src="/photos/projects/foxfordrescueranch.png"
+              alt="rescueRanch"
+            />
+
+            <button
+              onClick={() => toggleCard("rescueRanch")}
+              className="h-18 font-bold flex items-center justify-center gap-2 p-2 text-2xl bg-[#0000002e] hover:bg-[#5b6b4f] transition cursor-pointer"
+            >
+              Full-Stack Shelter Site (PHP/MySQL)
+              <span
+                className={`transition-transform duration-300 ${openCards["rescueRanch"] ? "rotate-180" : ""
+                  }`}
+              >
+                <IoIosArrowDropdown />
+              </span>
+            </button>
+
+            <div
+              className={`transition-all duration-300 overflow-hidden mx-auto rounded-b-lg bg-[#0000002e] ${openCards["rescueRanch"] ? "max-h-[300px] p-4" : "max-h-0 p-0"
+                }`}
+            >
+              <p className="text-white text-xl">
+                fictional animal rescue web platform built with PHP and MySQL.
+                It simulates a real-world online presence for an animal rescue organization,
+                including features like user authentication, an online store, animal photo galleries,
+                and database interaction. The project is designed to function within a LAMP (Linux, Apache, MySQL, PHP) environment.
+              </p>
+            </div>
+
+            <div className="w-full h-[2px] bg-[#ffffff] opacity-50"></div>
+            <div className="flex flex-wrap justify-center">
+              {techStackRescueRanch.map((tech) => (
+                <SkillBadge key={tech.label} {...tech} />
+              ))}
+            </div>
+            <div className="relative mt-auto w-full h-10">
+              <a
+                target="_blank"
+                href="https://github.com/PaTTTeX/lamp-website-PaTTTeX-main/tree/main/html"
+                rel="noreferrer"
+              >
+                <FaGithub className="absolute bottom-2 right-2 size-8 text-white hover:text-[#56a848] transition" />
+              </a>
+            </div>
+          </div>
+
+
+
+          {/* Card 5 - ShellDefender */}
+          <div className="flex flex-col border-5 border-[#4C5844] bg-[#4c584462] rounded-2xl shadow-inner text-center text-1xl w-full min-h-[750px]">
+            <h2 className="font-bold p-4 text-3xl bg-[#4C5844]">
+              ShellDefender<br />2023
+            </h2>
+
+            <FullscreenImage
+              src="/photos/projects/shelldefender.png"
+              alt="Enigma Vault"
+            />
+
+            <button
+              onClick={() => toggleCard("shelldefender")}
+              className="h-18 font-bold flex items-center justify-center gap-2 p-2 text-2xl bg-[#0000002e] hover:bg-[#5b6b4f] transition cursor-pointer"
+            >
+              Open Source Privacy Extension Website
+              <span
+                className={`transition-transform duration-300 ${openCards["shelldefender"] ? "rotate-180" : ""
+                  }`}
+              >
+                <IoIosArrowDropdown />
+              </span>
+            </button>
+
+            <div
+              className={`transition-all duration-300 overflow-hidden mx-auto rounded-b-lg bg-[#0000002e] ${openCards["shelldefender"] ? "max-h-[300px] p-4" : "max-h-0 p-0"
+                }`}
+            >
+              <p className="text-white text-xl">
+                ShellDefender is a fictional, fully responsive front-end website for a browser extension concept.
+                It presents ShellDefender as a free, open-source browser tool designed to enhance privacy, block ads,
+                and improve user experience with features like Image Swap and custom themes.
+              </p>
+            </div>
+
+            <div className="w-full h-[2px] bg-[#ffffff] opacity-50"></div>
+            <div className="flex flex-wrap justify-center">
+              {techStackShellDefender.map((tech) => (
+                <SkillBadge key={tech.label} {...tech} />
+              ))}
+            </div>
+            <div className="relative mt-auto w-full h-10">
+              <a target="_blank" href="https://github.com/G00361784/Antivirus" rel="noreferrer">
+                <FaGithub className="absolute bottom-2 right-2 size-8 text-white hover:text-[#56a848] transition" />
+              </a>
+            </div>
+          </div>
+
 
         </div>
       </main>
