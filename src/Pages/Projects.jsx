@@ -77,7 +77,7 @@ export default function Projects() {
       </header>
 
       <main>
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 sm:max-w-[98%] xl:max-w-[80%] mx-auto mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 2xl:max-w-[80%] max-w-[98%] mx-auto mt-10">
 
           {/* Card 1 - Guitar with Marion */}
           <div className="flex flex-col border-5 border-[#4C5844] bg-[#4c584462] rounded-2xl shadow-inner text-center text-3xl w-full min-h-[750px]">
@@ -236,7 +236,7 @@ export default function Projects() {
           {/* Card 4 - Foxford Rescue Ranch */}
           <div className="flex flex-col border-5 border-[#4C5844] bg-[#4c584462] rounded-2xl shadow-inner text-center text-1xl w-full min-h-[750px]">
             <h2 className="font-bold p-4 text-3xl bg-[#4C5844]">
-              Foxford Rescue Ranch<br />2024
+              Rescue Ranch<br />2024
             </h2>
 
             <FullscreenImage
