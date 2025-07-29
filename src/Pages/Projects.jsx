@@ -77,7 +77,7 @@ export default function Projects() {
       </header>
 
       <main>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-[80%] mx-auto mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 max-w-[80%] mx-auto mt-10">
 
           {/* Card 1 - Guitar with Marion */}
           <div className="flex flex-col border-5 border-[#4C5844] bg-[#4c584462] rounded-2xl shadow-inner text-center text-3xl w-full min-h-[750px]">
@@ -262,7 +262,7 @@ export default function Projects() {
                 }`}
             >
               <p className="text-white text-xl">
-                fictional animal rescue web platform built with PHP and MySQL.
+                Fictional animal rescue web platform built with PHP and MySQL.
                 It simulates a real-world online presence for an animal rescue organization,
                 including features like user authentication, an online store, animal photo galleries,
                 and database interaction. The project is designed to function within a LAMP (Linux, Apache, MySQL, PHP) environment.
