@@ -1,6 +1,6 @@
 import Slideshow from "./../Components/Slideshow.jsx";
 
-function Home() {
+export default function Home() {
   const scrollToSection = (id) => {
     const section = document.querySelector(id);
     if (section) {
@@ -86,5 +86,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
